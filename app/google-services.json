@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "265817715047",
+    "firebase_url": "https://lapit-b1716.firebaseio.com",
+    "project_id": "lapit-b1716",
+    "storage_bucket": "lapit-b1716.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265817715047:android:53c153a0b1d2a331",
+        "android_client_info": {
+          "package_name": "com.example.marcos.lapit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265817715047-cmienqmfunegprj3sv0a6east9l4vojk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC06LnytsdxnttUhBuGmU8qzt8Bof9ZHdM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
