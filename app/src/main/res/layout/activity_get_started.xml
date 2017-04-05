@@ -18,7 +18,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:background="@color/colorAccent"
-        android:text="Get Started"
+        android:text="Começar"
         android:textColor="#ffffff"
         android:textStyle="bold" />
 
@@ -33,7 +33,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/white"
-        android:text="sign in"
+        android:text="Log In"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold" />
 
@@ -49,23 +49,22 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp"
-        android:text="Lapit"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="42dp"
+        android:text="WestMyCantina"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="89dp"
-        android:text="The app where you can chat"
-        android:textColor="@android:color/background_dark"
+        android:text="Controle na palma da mão"
+        android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
 </RelativeLayout>
