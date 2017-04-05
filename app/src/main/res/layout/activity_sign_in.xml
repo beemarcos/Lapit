@@ -97,7 +97,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
         android:text="The app where you can chat"
-        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         android:textStyle="bold" />
 
