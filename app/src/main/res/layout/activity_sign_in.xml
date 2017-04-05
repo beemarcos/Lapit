@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +13,8 @@
        <android.support.v7.widget.Toolbar
            android:id="@+id/signInToolbar"
            android:layout_width="match_parent"
-           android:layout_height="wrap_content">
+           android:layout_height="wrap_content"
+           android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
 
        </android.support.v7.widget.Toolbar>
 
@@ -75,5 +77,40 @@
         android:hint="E-mail ..."
         android:inputType="textEmailAddress"
         android:padding="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/home_white" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="The app where you can chat"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="LAPIT"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

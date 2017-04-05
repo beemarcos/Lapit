@@ -34,7 +34,7 @@
         android:layout_marginTop="16dp"
         android:background="@android:color/white"
         android:text="sign in"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold" />
 
     <ImageView
@@ -49,23 +49,23 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="26dp"
         android:text="Lapit"
-        android:textColor="@android:color/white"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:layout_above="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="89dp"
         android:text="The app where you can chat"
-        android:textColor="@android:color/white"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        android:layout_above="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </RelativeLayout>
