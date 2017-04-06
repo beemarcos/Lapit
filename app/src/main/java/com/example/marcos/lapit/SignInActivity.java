@@ -1,5 +1,7 @@
 package com.example.marcos.lapit;
 
+import android.accounts.Account;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,8 +26,7 @@ public class SignInActivity extends AppCompatActivity {
     private Toolbar nSignInToolbar;
 
     private FirebaseAuth nAuth;
-
-    private FirebaseAuth.AuthStateListener nAuthListner;
+    private FirebaseAuth.AuthStateListener nAuthListener;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +43,11 @@ public class SignInActivity extends AppCompatActivity {
         nPasswordField = (EditText)findViewById(R.id.tfSenha);
         nLoginBtn = (Button) findViewById(R.id.buttonEntrar);
 
-        nAuthListner = new FirebaseAuth.AuthStateListener() {
+        nAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser()!= null){
-                    //parei aqui
-                }else{
-                    //scsc
+                    startActivity(new Intent(SignInActivity.this, AccountActivity.class));
                 }
 
             }
@@ -67,6 +66,14 @@ public class SignInActivity extends AppCompatActivity {
 
 
     }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        nAuth.addAuthStateListener(nAuthListener);
+    }
+
 
     private void startSignIn(){
         String email = nEmailField.getText().toString();
