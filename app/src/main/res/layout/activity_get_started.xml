@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.marcos.lapit.GetStartedActivity">
 
 
@@ -42,8 +42,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/getStartedSignIn"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/home_buildings" />
+        android:layout_alignParentStart="true"
+        android:elevation="1dp"
+        app:srcCompat="@drawable/logo_white_03" />
 
     <TextView
         android:id="@+id/textView"
@@ -60,11 +61,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
         android:text="Controle na palma da mão"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp" />
+        android:textStyle="bold" />
 </RelativeLayout>

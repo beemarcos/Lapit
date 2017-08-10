@@ -79,30 +79,30 @@
         android:layout_marginBottom="16dp"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
-        app:srcCompat="@drawable/home_white" />
+        app:srcCompat="@drawable/logo_white_03" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
         android:text="Total Controle"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp"
         android:text="WestMyCantina"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_above="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
 
 </RelativeLayout>
